@@ -1,4 +1,7 @@
 package com.bluecode.mhmd.tarabin.data.db.model;
 
-public class Note {
+import com.orm.SugarRecord;
+
+public class Note extends SugarRecord {
+
 }

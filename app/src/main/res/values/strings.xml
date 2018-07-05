@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Tarabin</string>
+
+
+    <string-array name="bankArray">
+        <item>اقتصاد نوین</item>
+        <item>کوثر</item>
+    </string-array>
+    <item name="bank_kosar">کوثر</item>
+    <item name="bank_eghtesadNovin">اقتصاد نوین</item>
 </resources>
