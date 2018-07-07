@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class User extends SugarRecord {
 
     @Unique
-    private long id;
+    private Long id;
     private String userFirsName;
     private String userLastName;
     private URI image;

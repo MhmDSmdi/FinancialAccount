@@ -11,7 +11,7 @@ public class Transaction extends SugarRecord {
     private String day;
     private String date;
     private BankCard bankCard;
-    private User currentUser;
+    private User user;
     private String description;
     private TransactionType transactionType;
     private boolean isImportant;
@@ -20,13 +20,13 @@ public class Transaction extends SugarRecord {
     public Transaction() {
     }
 
-    public Transaction(Long id, String value, String day, String date, BankCard bankCard, User currentUser, String description, TransactionType transactionType) {
+    public Transaction(Long id, String value, String day, String date, BankCard bankCard, User user, String description, TransactionType transactionType) {
         this.id = id;
         this.value = value;
         this.day = day;
         this.date = date;
         this.bankCard = bankCard;
-        this.currentUser = currentUser;
+        this.user = user;
         this.description = description;
         this.transactionType = transactionType;
     }
@@ -52,8 +52,8 @@ public class Transaction extends SugarRecord {
         return bankCard;
     }
 
-    public User getCurrentUser() {
-        return currentUser;
+    public User getUser() {
+        return user;
     }
 
     public String getDescription() {
