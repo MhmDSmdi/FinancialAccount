@@ -7,28 +7,15 @@ import java.net.URI;
 
 public class Note extends SugarRecord {
 
-    @Unique
-    private Long id;
     private URI notePic;
     private String note;
 
     public Note() {
     }
 
-    public Note(Long id, URI notePic, String note) {
-        this.id = id;
+    public Note(URI notePic, String note) {
         this.notePic = notePic;
         this.note = note;
-    }
-
-    @Override
-    public Long getId() {
-        return id;
-    }
-
-    @Override
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public URI getNotePic() {

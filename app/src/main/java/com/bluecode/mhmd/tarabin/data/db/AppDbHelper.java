@@ -31,7 +31,7 @@ public class AppDbHelper implements DbHelper {
 
     @Override
     public boolean deleteTransaction(Long transactionId) {
-        Transaction transactionDeleted = (Transaction) Transaction.find(Transaction.class, "id = ", transactionId.toString());
+        Transaction transactionDeleted = Transaction.findById(Transaction.class, transactionId);
         Transaction.delete(transactionDeleted);
         return true;
     }
@@ -44,7 +44,7 @@ public class AppDbHelper implements DbHelper {
 
     @Override
     public User getUserById(Long userId) {
-        User user = (User) User.find(User.class, "id = ", userId.toString());
+        User user = User.findById(User.class, userId);
         return user;
     }
 
@@ -56,7 +56,7 @@ public class AppDbHelper implements DbHelper {
 
     @Override
     public boolean deleteUser(Long userId) {
-        User user = (User) User.find(User.class, "id = ", userId.toString());
+        User user = User.findById(User.class, userId);
         User.delete(user);
         return true;
     }
@@ -69,13 +69,13 @@ public class AppDbHelper implements DbHelper {
 
     @Override
     public List<Note> getAllNoteByUser(Long userId) {
-        User user = (User) User.find(User.class, "id = " , userId.toString());
+        User user = User.findById(User.class, userId);
         return user.getNoteList();
     }
 
     @Override
     public boolean deleteNote(Long noteId) {
-        Note note = (Note) Note.find(Note.class, "id = ", noteId.toString());
+        Note note = Note.findById(Note.class, noteId);
         Note.delete(note);
         return true;
     }

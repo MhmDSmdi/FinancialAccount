@@ -5,8 +5,6 @@ import com.orm.dsl.Unique;
 
 public class Transaction extends SugarRecord {
 
-    @Unique
-    private Long id;
     private String value;
     private String day;
     private String date;
@@ -20,8 +18,7 @@ public class Transaction extends SugarRecord {
     public Transaction() {
     }
 
-    public Transaction(Long id, String value, String day, String date, BankCard bankCard, User user, String description, TransactionType transactionType) {
-        this.id = id;
+    public Transaction(String value, String day, String date, BankCard bankCard, User user, String description, TransactionType transactionType) {
         this.value = value;
         this.day = day;
         this.date = date;
@@ -29,11 +26,6 @@ public class Transaction extends SugarRecord {
         this.user = user;
         this.description = description;
         this.transactionType = transactionType;
-    }
-
-    @Override
-    public Long getId() {
-        return id;
     }
 
     public String getValue() {

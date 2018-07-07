@@ -8,8 +8,7 @@ import java.util.ArrayList;
 
 public class User extends SugarRecord {
 
-    @Unique
-    private Long id;
+
     private String userFirsName;
     private String userLastName;
     private URI image;
@@ -21,15 +20,9 @@ public class User extends SugarRecord {
 
     }
 
-    public User(long id, String userFirsName, String userLastName) {
-        this.id = id;
+    public User(String userFirsName, String userLastName) {
         this.userFirsName = userFirsName;
         this.userLastName = userLastName;
-    }
-
-    @Override
-    public Long getId() {
-        return id;
     }
 
     public String getUserFirsName() {
