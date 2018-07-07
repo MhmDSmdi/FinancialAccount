@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Tarabin</string>
 
-
+    <string name="some_error">مشکلی بوجود امده است</string>
     <string-array name="bankArray">
         <item>اقتصاد نوین</item>
         <item>کوثر</item>
     </string-array>
-    <item name="bank_kosar">کوثر</item>
-    <item name="bank_eghtesadNovin">اقتصاد نوین</item>
+    <string name="bank_kosar">کوثر</string>
+    <string name="bank_eghtesadNovin">اقتصاد نوین</string>
 </resources>

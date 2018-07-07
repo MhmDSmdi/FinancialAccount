@@ -1,6 +1,11 @@
 package com.bluecode.mhmd.tarabin;
 
-import android.app.Application;
+import com.orm.SugarApp;
 
-public class MvpApp extends Application {
+public class MvpApp extends SugarApp {
+    @Override
+    public void onCreate() {
+        super.onCreate();
+
+    }
 }
